@@ -2,7 +2,6 @@ from moviegenius import mgchat
 import os
 
 #setting up environment variables
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = input("Enter huggingface api token: ")
 os.environ["OPENAI_API_KEY"] = input("Enter openai api key: ")
 
 
