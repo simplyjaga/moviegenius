@@ -1,5 +1,6 @@
 from getplot import getplot
 from contentloader import ContentLoader
+from getpersona import getpersona
 
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
@@ -27,10 +28,15 @@ def mgchat(user_que):
 	docsearch = FAISS.from_documents(texts, embeddings)
 
 	#build the answering system
-	# ref: https://github.com/hwchase17/langchain/issues/2255
 	llm = OpenAI()
+	
+	prompt = getpersona()
+	chain_type_kwargs = {"prompt": prompt}
+		
+	# ref: https://github.com/hwchase17/langchain/issues/2255
 	retriever = docsearch.as_retriever(search_kwargs={"k": 1})
-	qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever)
+	
+	qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever,chain_type_kwargs=chain_type_kwargs)
 
 	#getting the answer
 	with get_openai_callback() as cb:
