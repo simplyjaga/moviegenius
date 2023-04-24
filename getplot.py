@@ -27,7 +27,7 @@ def wiki_info(query):
 		
 		return pg_content.split("==")[2]  #specifically selecting only the plot section
 	else:
-		print("No Wikipedia's page found")
+		print("No Wikipedia's page found, So using only DDG search results.")
 		return ""
 
 def getplot(query):
@@ -35,7 +35,8 @@ def getplot(query):
 	ddg_res = ddg_info(query)
 	#wiki search results
 	wiki_res = wiki_info(query)
-	return [wiki_res, ddg_res]
+	content = wiki_res + "\n" + ddg_res
+	return content
 
 
 
