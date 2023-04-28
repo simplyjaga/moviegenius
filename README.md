@@ -17,4 +17,4 @@ You can also directly try it out in the Hugging Face Spaces @ https://huggingfac
 
 NOTE: In case installing packages through requirements.txt throws an error, use the below command to install the required packages manually.
 
-```pip install duckduckgo-search langchain huggingface_hub openai wikipedia chromadb tiktoken ```
+```pip install duckduckgo_search wikipedia langchain faiss-cpu openai gradio tiktoken ```
