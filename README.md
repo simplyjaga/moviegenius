@@ -7,8 +7,8 @@ Steps to use Movie Genius:
 1. Clone the repo locally
 2. Run the below command to install the required packages (creating a virtual env before installing it would be a better option)
 ```pip install -r requirements```
-3. Go to the terminall and Run the below command to start the application (use python3 or python depending on your system) 
+3. Go to the terminal and Run the below command to start the application (use python3 or python depending on your system) 
 ```python app.py```
-4. Throw the question to the related to you favourite movie and have fun
+4. Throw the question to the application related to your favourite movie and have fun
 
 NOTE: Since the application uses OpenAI's api to generate a best possible answer, it will ask for your openai api key. 
