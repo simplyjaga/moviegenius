@@ -22,7 +22,7 @@ def mgchat(user_que):
 	embeddings = OpenAIEmbeddings()
 	docsearch = FAISS.from_documents(documents, embeddings)
 
-	#build the answering system
+	#build the answer retrievel system
 	llm = OpenAI()
 		
 	# ref: https://github.com/hwchase17/langchain/issues/2255

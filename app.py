@@ -7,6 +7,7 @@ os.environ["OPENAI_API_KEY"] = input("Enter openai api key: ")
 
 
 print("Enter 'exit' to end the conversation")
+print("Assumption: Each question should have the movie name in some way.")
 print("Example question: Why Sivaji comes to India? in the film Sivaji.")
 
 while True:

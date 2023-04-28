@@ -5,11 +5,6 @@ def ddg_info(query):
         """Run query through DuckDuckGo and return results."""
         
         results = ddg(query,max_results=5)
-        
-        if len(results) == 0:
-            print("No good DuckDuckGo Search Result was found")
-            return ""
-            
         snippets = [result["body"] for result in results] 
         return " ".join(snippets)
 
