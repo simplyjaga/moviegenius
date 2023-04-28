@@ -13,4 +13,4 @@ Steps to use Movie Genius:
 
 NOTE: Since the application uses OpenAI's api to generate a best possible answer, it will ask for your openai api key. 
 
-You can also directly try it out in the web: [Hugging Face Space Demo]{https://huggingface.co/spaces/simplyjaga/movie_genius_openai}
+You can also directly try it out in the Hugging Face Spaces @ https://huggingface.co/spaces/simplyjaga/movie_genius_openai
